@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
+import Button from './Button.astro';
+---
+
+<div class="bg-white py-6 px-24 flex justify-center">
+    <div class="flex flex-row justify-between max-w-7xl w-full">
+        <div class="flex flex-row items-center space-x-4">
+            <Image src={logo} alt="logo"/>
+            <h1>PETWORLD</h1>
+        </div>
+        <div class="flex flex-row space-x-8">        
+        </div>
+        <div class="flex flex-row space-x-4">
+            <Button text="Sign Up"/>
+            <Button text="Login"/>
+        </div>
+    </div>
+</div>

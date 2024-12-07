@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import Button from "./Button.astro";
+import HeroImage from "../assets/Image.png";
+---
+
+<div class="flex justify-center py-24 px-24 bg-[#F7F5FD]">
+    <div class="flex flex-row justify-between max-w-7xl w-full">
+        <div class="flex flex-col max-w-lg gap-8">
+            <h1 class="text-8xl font-poppins font-bold">Pet Store & Beyond</h1>
+            <p class="text-xl font-poppins text-[#9E9E9E]">This is a sample landing page, created with Figma and Anima. No coding involved.</p>
+            <div class="flex-initial">
+                <Button text="Get Started"></Button>
+            </div>
+            
+        </div>
+        <Image src={HeroImage} alt="picture of dogs"/>
+    </div>
+
+</div>
